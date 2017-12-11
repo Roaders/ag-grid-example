@@ -101,7 +101,7 @@ export class AppComponent {
             parentId: "taskThree"
         },
         {
-            id: "taskTwelve",
+            id: "taskThirteen",
             name: "Tidy Drawer",
             type: TaskType.Tidy,
             parentId: "taskThree"
