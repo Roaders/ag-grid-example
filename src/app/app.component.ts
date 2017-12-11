@@ -129,6 +129,10 @@ export class AppComponent {
         {
             headerName: "Type",
             field: "type"
+        },
+        {
+            headerName: "Name",
+            field: "name"
         }
     ];
 
