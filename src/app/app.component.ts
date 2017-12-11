@@ -129,6 +129,14 @@ export class AppComponent {
         {
             headerName: "Type",
             field: "type"
+        },
+        {
+            headerName: "Id",
+            field: "id"
+        },
+        {
+            headerName: "Parent Id",
+            field: "parentId"
         }
     ];
 
@@ -141,7 +149,7 @@ export class AppComponent {
     private getRowHierarchy(task: ITask, children?: string[]){
         children = children ? children : [];
 
-        children.unshift(task.id);
+        children.unshift(task.name);
 
         const parent = task.parentId ? this.rowData.filter(row => row.id === task.parentId)[0] : undefined;
 
